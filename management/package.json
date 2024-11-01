@@ -1,0 +1,36 @@
+{
+  "name": "management",
+  "version": "1.0.0",
+  "description": "This will handle all management for the microservice",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon",
+    "build": "npx tsc",
+    "migrate:up": "npx sequelize-cli db:migrate",
+    "migrate:undo": "npx sequelize-cli db:migrate:undo"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.3",
+    "eureka-js-client": "^4.5.0",
+    "express": "^4.19.2",
+    "joi": "^17.13.3",
+    "pg": "^8.13.0",
+    "pg-hstore": "^2.3.4",
+    "sequelize": "^6.37.3",
+    "slugify": "^1.6.6"
+  },
+  "devDependencies": {
+    "@types/eureka-js-client": "^4.5.9",
+    "@types/express": "^4.17.21",
+    "@types/node": "^20.14.9",
+    "dotenv": "^16.4.5",
+    "nodemon": "^3.1.4",
+    "sequelize-cli": "^6.6.2",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.5.2"
+  }
+}
